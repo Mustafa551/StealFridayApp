@@ -7,4 +7,6 @@ export * from './viewall/Viewall';
 export * from './products/Product';
 export * from './products2/Products2';
 export * from './settingoption/Settingoption';
+export * from './input3/Input3';
+export * from './notificationbtn/Notificationtbn';
 

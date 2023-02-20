@@ -21,7 +21,7 @@ const Modall = ({ visible, backbtn, svisible, show, text,presss }) => {
         </> 
           :
           <Lottie
-            style={{height: 140,width: 140,marginBottom: -20}}
+            style={{height: 140,width: 140,marginBottom: -5}}
             autoPlay
               source={require("../../assests/lottie/lf30_editor_mlmghdi1.json")}
               

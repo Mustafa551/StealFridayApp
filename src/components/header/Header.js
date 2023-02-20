@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-const Header = ({ header1,press,press2,header2,press3 }) => {
+const Header = ({ header1,press,press2,header2,press3,height,width }) => {
   return (
     <>
       {header1 && (
@@ -60,7 +60,7 @@ const Header = ({ header1,press,press2,header2,press3 }) => {
           {/* <View  style={{width: "88%",alignItems:"center",alignSelf:"center"}}> */}
             
 
-            <Image  source={require('../../assests/images/logo2.png')} style={{width: 140,height: 35}} />
+            <Image  source={require('../../assests/images/logo2.png')} style={{width: width ? width : 140,height: height ? height : 35}} />
           {/* </View> */}
         </View>
       )}

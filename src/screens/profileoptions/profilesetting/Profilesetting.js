@@ -13,11 +13,11 @@ const Profilesetting = ({navigation}) => {
                 <Text style={{fontSize: 22,fontWeight: "bold"}}>Settings</Text>
             </View>
             <View style={{marginTop: 50,}}>
-            <Settingoption title={"My Profile"} />
-            <Settingoption title={"Notificatons"} />
-            <Settingoption title={"Change Password"} />
-            <Settingoption title={"Terms & Conditions"} />
-            <Settingoption title={"Privacy Policy"} />
+            <Settingoption title={"My Profile"} press={()=> navigation.navigate('Myprofile')} />
+            <Settingoption title={"Notificatons"} press={()=> navigation.navigate('Notification')} />
+            <Settingoption title={"Change Password"} press={()=> navigation.navigate('Changepassword')} />
+            <Settingoption title={"Terms & Conditions"} press={()=> navigation.navigate('Terms')} />
+            <Settingoption title={"Privacy Policy"} press={()=> navigation.navigate('Privacypolicy')} />
             </View>
         </View>
       </ScrollView>

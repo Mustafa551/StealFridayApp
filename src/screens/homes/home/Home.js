@@ -11,125 +11,18 @@ import {
 } from "react-native";
 import CountDown from "react-native-countdown-component";
 import { Header, Product, Viewall, Products2 } from "../../../components";
+import { product, product2, product3 } from "../../../constant/objects";
 
-const Home = ({navigation}) => {
-  const product = [
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/tshirt1.png"),
-      title: "Gym T-shirt",
-      backcolor: "#00000029",
-      iconcolor: "#00000029",
-    },
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/shoes1.png"),
-      title: "Nike Collection",
-      backcolor: "#998BC8AD",
-      iconcolor: "#453B62",
-    },
-    {
-      tag: "New",
-      price: "$15.00",
-      image: require("../../../assests/images/headphone1.png"),
-      title: "Beats Up HeadSet",
-      backcolor: "#114C8A",
-      iconcolor: "#114C8A",
-    },
-    {
-      tag: "New",
-      price: "$15.00",
-      image: require("../../../assests/images/shoes2.png"),
-      title: "Nike Collection",
-      backcolor: "#CDF37B",
-      iconcolor: "#BFFB41",
-    },
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/tshirt2.png"),
-      title: "Gym T-shirt",
-      backcolor: "#00000029",
-      iconcolor: "#00000029",
-    },
-  ];
-
-  const product2 = [
-    {
-      image: require("../../../assests/images/headphone2.png"),
-      title: "Accessories",
-      total: "48 Products",
-    },
-    {
-      image: require("../../../assests/images/tshirt3.png"),
-      title: "Clothing",
-      total: "98 Products",
-    },
-    {
-      image: require("../../../assests/images/shoes3.png"),
-      title: "Shoes",
-      total: "100 Products",
-    },
-  ];
-
-  const product3 = [
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/tshirt1.png"),
-      title: "Gym T-shirt",
-      backcolor: "#00000029",
-      iconcolor: "#00000029",
-    },
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/shoes1.png"),
-      title: "Nike Collection",
-      backcolor: "#998BC8AD",
-      iconcolor: "#453B62",
-    },
-    {
-      tag: "New",
-      price: "$15.00",
-      image: require("../../../assests/images/headphone1.png"),
-      title: "Beats Up HeadSet",
-      backcolor: "#114C8A",
-      iconcolor: "#114C8A",
-    },
-    {
-      tag: "New",
-      price: "$15.00",
-      image: require("../../../assests/images/shoes2.png"),
-      title: "Nike Collection",
-      backcolor: "#BFFB41",
-      iconcolor: "#CDF37B",
-    },
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/apple.png"),
-      title: "Apple Airpods",
-      backcolor: "#AF0010",
-      iconcolor: "#FF0000",
-    },
-    {
-      tag: "Old",
-      price: "$15.00",
-      image: require("../../../assests/images/tshirt2.png"),
-      title: "Gym T-shirt",
-      backcolor: "#00000029",
-      iconcolor: "#00000029",
-    },
-  ];
-
+const Home = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#F8F8F8" }}>
       <SafeAreaView style={{ flex: 1 }}>
         <View style={{ width: "90%", alignSelf: "center" }}>
-          <Header press2={()=> navigation.navigate("Profilesetting")} press={() => navigation.openDrawer()} header1={true} />
+          <Header
+            press2={() => navigation.navigate("Profilesetting")}
+            press={() => navigation.openDrawer()}
+            header1={true}
+          />
           <View style={{ width: "100%" }}>
             <Image
               source={require("../../../assests/images/mask.png")}
@@ -147,41 +40,12 @@ const Home = ({navigation}) => {
             end={{ x: 0.8, y: 1 }}
             style={styles.timer}
           >
-            {/* <View style={{width:"90%",alignSelf: "center",flexDirection: "row",justifyContent: "space-between",alignItems:"center"}}>
-                <View style={{alignItems:"center"}}>
-                  <Text style={{color: "white",fontSize: 28,fontWeight:"bold"}}>00</Text>
-                  <Text style={{color: "white",fontSize: 10, marginTop: -5}}>Days</Text>
-                </View>
-
-                <View style={{borderLeftWidth: 1,height: 40 ,borderLeftColor: "#030303"}}></View>
-
-                <View style={{alignItems:"center"}}>
-                  <Text style={{color: "white",fontSize: 28,fontWeight:"bold"}}>14</Text>
-                  <Text style={{color: "white",fontSize: 10, marginTop: -5}}>Hours</Text>
-                </View>
-
-                <View style={{borderLeftWidth: 1,height: 40, borderLeftColor: "#030303"}}></View>
-
-
-                <View style={{alignItems:"center"}}>
-                  <Text style={{color: "white",fontSize: 28,fontWeight:"bold"}}>30</Text>
-                  <Text style={{color: "white",fontSize: 10, marginTop: -5}}>Minutes</Text>
-                </View>
-
-                <View style={{borderLeftWidth: 1,height: 40, borderLeftColor: "#030303"}}></View>
-
-
-                <View style={{alignItems:"center"}}>
-                  <Text style={{color: "white",fontSize: 28,fontWeight:"bold"}}>09</Text>
-                  <Text style={{color: "white",fontSize: 10, marginTop: -5}}>Seconds</Text>
-                </View>
-              </View>
-           */}
             <CountDown
+              separatorStyle={{}}
               style={{}}
               until={2000000}
               size={20}
-              digitStyle={{ borderRightWidth: 1 }}
+              digitStyle={{ marginHorizontal: 20 }}
               digitTxtStyle={{ color: "white", fontSize: 28 }}
               timeLabelStyle={{ fontSize: 10, marginTop: -8 }}
               timeToShow={["D", "H", "M", "S"]}

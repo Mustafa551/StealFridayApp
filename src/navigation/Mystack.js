@@ -8,8 +8,12 @@ import Signup from '../screens/auth/signup/Signup';
 import Payment from '../screens/auth/payment/Payment';
 import Home from '../screens/homes/home/Home';
 import Mydrawer from './Mydrawer';
-import Profilesetting from '../screens/homes/profilesetting/Profilesetting';
-
+import Myprofile from '../screens/profileoptions/myProfile/Myprofile';
+import Changepassword from '../screens/profileoptions/changepassword/Changepassword';
+import Profilesetting from '../screens/profileoptions/profilesetting/Profilesetting'
+import Notification from '../screens/profileoptions/notification/Notification';
+import Terms from '../screens/profileoptions/termscondition/Terms';
+import Privacypolicy from '../screens/profileoptions/privacypolicy/Privacypolicy';
 
 
 
@@ -34,6 +38,11 @@ const Auth =()=>{
         <Stack.Navigator>
         <Stack.Screen name='Home' component={Home}  options={{headerShown:false}} />
         <Stack.Screen name='Profilesetting' component={Profilesetting}  options={{headerShown:false}} />
+        <Stack.Screen name='Changepassword' component={Changepassword}  options={{headerShown:false}} />
+        <Stack.Screen name='Myprofile' component={Myprofile}  options={{headerShown:false}} />
+        <Stack.Screen name='Notification' component={Notification}  options={{headerShown:false}} />
+        <Stack.Screen name='Terms' component={Terms}  options={{headerShown:false}} />
+        <Stack.Screen name='Privacypolicy' component={Privacypolicy}  options={{headerShown:false}} />
       
       </Stack.Navigator>
 

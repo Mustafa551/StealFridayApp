@@ -1,5 +1,6 @@
 import React from "react";
 import { FlatList, Image, ImageBackground, Text, TouchableOpacity, View } from "react-native";
+import { images } from "../../constant/Image";
 
 const Customdrawer = ({navigation}) => {
   const sidebar = [
