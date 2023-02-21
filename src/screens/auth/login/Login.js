@@ -10,6 +10,7 @@ import {
 import { Button, Input } from "../../../components";
 import Checkbox from "expo-checkbox";
 import Entypo from "@expo/vector-icons/Entypo";
+import Svgicon1 from "../../../assests/svg/homesvg";
 
 
 // import AppLoading from 'expo-app-loading'
@@ -84,6 +85,7 @@ const Login = ({ navigation }) => {
               back={"#a41716"}
             />
             <Text style={styles.or}>OR</Text>
+            <Svgicon1 />
 
             <View style={styles.signup}>
               <Text style={{ fontSize: 12 }}>Don't have an account? </Text>

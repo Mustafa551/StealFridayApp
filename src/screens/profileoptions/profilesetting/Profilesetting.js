@@ -14,7 +14,7 @@ const Profilesetting = ({navigation}) => {
             </View>
             <View style={{marginTop: 50,}}>
             <Settingoption title={"My Profile"} press={()=> navigation.navigate('Myprofile')} />
-            <Settingoption title={"Notificatons"} press={()=> navigation.navigate('Notification')} />
+            <Settingoption title={"Notificatons"} press={()=> navigation.navigate('Notificationsetting')} />
             <Settingoption title={"Change Password"} press={()=> navigation.navigate('Changepassword')} />
             <Settingoption title={"Terms & Conditions"} press={()=> navigation.navigate('Terms')} />
             <Settingoption title={"Privacy Policy"} press={()=> navigation.navigate('Privacypolicy')} />

@@ -3,7 +3,7 @@ import { View, SafeAreaView, ScrollView, Text, FlatList } from "react-native";
 import { Header, Notificationtbn } from "../../../components";
 import { noti1, noti2 } from "../../../constant/objects";
 
-const Notification = ({ navigation }) => {
+const Notificationsetting = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#F8F8F8" }}>
       <ScrollView>
@@ -54,4 +54,4 @@ const Notification = ({ navigation }) => {
   );
 };
 
-export default Notification;
+export default Notificationsetting;

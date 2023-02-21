@@ -22,6 +22,7 @@ const Home = ({ navigation }) => {
             press2={() => navigation.navigate("Profilesetting")}
             press={() => navigation.openDrawer()}
             header1={true}
+            press4={() => navigation.navigate('Notification')}
           />
           <View style={{ width: "100%" }}>
             <Image
@@ -40,7 +41,7 @@ const Home = ({ navigation }) => {
             end={{ x: 0.8, y: 1 }}
             style={styles.timer}
           >
-            <CountDown
+            {/* <CountDown
               separatorStyle={{}}
               style={{}}
               until={2000000}
@@ -50,7 +51,7 @@ const Home = ({ navigation }) => {
               timeLabelStyle={{ fontSize: 10, marginTop: -8 }}
               timeToShow={["D", "H", "M", "S"]}
               timeLabels={{ d: "Days", h: "Hours", m: "Minutes", s: "Seconds" }}
-            />
+            /> */}
           </LinearGradient>
 
           <Viewall

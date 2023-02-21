@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "StealFriday",
-    "slug": "StealFriday",
+    "slug": "stealfriday",
     "version": "1.0.0",
     "orientation": "DEFAULT",
     "icon": "./assets/icon.png",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.mustafa551.stealfriday"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "193c81a7-2bd1-4dac-afd0-b5891b48d5db"
+      }
+    },
+    "owner": "mustafa551"
   }
 }

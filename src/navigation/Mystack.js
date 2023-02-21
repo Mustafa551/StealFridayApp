@@ -11,9 +11,10 @@ import Mydrawer from './Mydrawer';
 import Myprofile from '../screens/profileoptions/myProfile/Myprofile';
 import Changepassword from '../screens/profileoptions/changepassword/Changepassword';
 import Profilesetting from '../screens/profileoptions/profilesetting/Profilesetting'
-import Notification from '../screens/profileoptions/notification/Notification';
+import Notificationsetting from '../screens/profileoptions/notificationsetting/Notificationsetting';
 import Terms from '../screens/profileoptions/termscondition/Terms';
 import Privacypolicy from '../screens/profileoptions/privacypolicy/Privacypolicy';
+import Notification from '../screens/homes/notification/Notification';
 
 
 
@@ -40,9 +41,10 @@ const Auth =()=>{
         <Stack.Screen name='Profilesetting' component={Profilesetting}  options={{headerShown:false}} />
         <Stack.Screen name='Changepassword' component={Changepassword}  options={{headerShown:false}} />
         <Stack.Screen name='Myprofile' component={Myprofile}  options={{headerShown:false}} />
-        <Stack.Screen name='Notification' component={Notification}  options={{headerShown:false}} />
+        <Stack.Screen name='Notificationsetting' component={Notificationsetting}  options={{headerShown:false}} />
         <Stack.Screen name='Terms' component={Terms}  options={{headerShown:false}} />
         <Stack.Screen name='Privacypolicy' component={Privacypolicy}  options={{headerShown:false}} />
+        <Stack.Screen name='Notification' component={Notification}  options={{headerShown:false}} />
       
       </Stack.Navigator>
 

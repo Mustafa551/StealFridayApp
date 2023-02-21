@@ -226,3 +226,44 @@ export const product = [
     },
     
   ]
+
+  export const newnoti = [
+    {
+      image: require('../../assests/images/shoes4.png'),
+      title: "New Nike Shoe Added",
+      time: "Yesterday - 10:00 Pm"
+    },
+    {
+      image: require('../../assests/images/headphone3.png'),
+      title: "New NHeadphone Added",
+      time: "Yesterday - 11:00 Pm"
+    },
+    {
+      image: require('../../assests/images/tshirt4.png'),
+      title: "New T-Shirt Added",
+      time: "Yesterday - 10:00 Pm"
+    },
+  ]
+
+  export const oldnoti = [
+    {
+      image: require('../../assests/images/shoes5.png'),
+      title: "New Nike Shoe Added",
+      time: "Yesterday - 10:00 Pm"
+    },
+    {
+      image: require('../../assests/images/shoes6.png'),
+      title: "New Nike Shoe Added",
+      time: "Yesterday - 10:00 Pm"
+    },
+    {
+      image: require('../../assests/images/headphone4.png'),
+      title: "New NHeadphone Added",
+      time: "Yesterday - 11:00 Pm"
+    },
+    {
+      image: require('../../assests/images/tshirt5.png'),
+      title: "New T-Shirt Added",
+      time: "Yesterday - 10:00 Pm"
+    },
+  ]
