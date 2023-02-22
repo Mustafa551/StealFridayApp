@@ -15,6 +15,7 @@ import Notificationsetting from '../screens/profileoptions/notificationsetting/N
 import Terms from '../screens/profileoptions/termscondition/Terms';
 import Privacypolicy from '../screens/profileoptions/privacypolicy/Privacypolicy';
 import Notification from '../screens/homes/notification/Notification';
+import Addtocart from '../screens/products/addtocart/Addtocart';
 
 
 
@@ -37,6 +38,7 @@ const Auth =()=>{
  export const Homes =() =>{
     return(
         <Stack.Navigator>
+        <Stack.Screen name='Addtocart' component={Addtocart}  options={{headerShown:false}} />
         <Stack.Screen name='Home' component={Home}  options={{headerShown:false}} />
         <Stack.Screen name='Profilesetting' component={Profilesetting}  options={{headerShown:false}} />
         <Stack.Screen name='Changepassword' component={Changepassword}  options={{headerShown:false}} />
@@ -55,9 +57,9 @@ const  MyStack= () =>{
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Mydrawer" component={Mydrawer}  options={{headerShown:false}} />
           <Stack.Screen name="Auth" component={Auth} options={{headerShown:false}} />
           {/* <Stack.Screen name="Homes" component={Homes}  options={{headerShown:false}} /> */}
-        <Stack.Screen name="Mydrawer" component={Mydrawer}  options={{headerShown:false}} />
 
       </Stack.Navigator>
     </NavigationContainer>

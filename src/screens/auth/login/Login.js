@@ -11,6 +11,8 @@ import { Button, Input } from "../../../components";
 import Checkbox from "expo-checkbox";
 import Entypo from "@expo/vector-icons/Entypo";
 import Svgicon1 from "../../../assests/svg/homesvg";
+import Images from "../../../constant/Image";
+import Colors from "../../../constant/colors";
 
 
 // import AppLoading from 'expo-app-loading'
@@ -31,12 +33,12 @@ const Login = ({ navigation }) => {
   const lockimage = require("../../../assests/images/lockicon.png");
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#F8F8F8" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: Colors.backgroundcolor }}>
       <ScrollView>
         <View style={{ width: "90%", alignSelf: "center" }}>
           <View style={styles.topview}>
             <Image
-              source={require("../../../assests/images/logo2.png")}
+              source={Images.background.back1}
               style={styles.logoimage}
             />
 

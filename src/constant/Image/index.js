@@ -1,7 +1,7 @@
-// export  const images = [
-//     backgroundimage= {
-//         back1: require('../../assests/images/Splash.png')
-//     }
-// ]
+const Images ={
+        background: {
+            back1: require('../../assests/images/logo2.png')
+        }
+    }
 
-// export {images}
+export default Images

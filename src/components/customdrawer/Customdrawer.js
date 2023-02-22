@@ -12,6 +12,7 @@ const Customdrawer = ({navigation}) => {
     {
       title: "Settings",
       image: require("../../assests/images/user2.png"),
+      change: 'Profilesetting'
     },
     {
       title: "Subscription",
@@ -54,7 +55,7 @@ const Customdrawer = ({navigation}) => {
             data={sidebar}
             renderItem={(item) => {
               return (
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => navigation.navigate(item.item.change)} >
 
                 <View style={{ flexDirection: "row", marginBottom: 23 }}>
                   <Image
