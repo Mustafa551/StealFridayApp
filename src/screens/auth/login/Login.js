@@ -87,7 +87,7 @@ const Login = ({ navigation }) => {
               back={"#a41716"}
             />
             <Text style={styles.or}>OR</Text>
-            <Svgicon1 />
+            {/* <Svgicon1 /> */}
 
             <View style={styles.signup}>
               <Text style={{ fontSize: 12 }}>Don't have an account? </Text>

@@ -8,9 +8,11 @@ import {
   Image,
   StyleSheet,
   Text,
+  TouchableOpacity,
 } from "react-native";
 import { Button, Button2, Sizes } from "../../../components";
-const Addtocart = () => {
+const Addtocart = ({navigation,route}) => {
+  const { image, productname, price, tag } = route.params;
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#F8F8F8" }}>
       <ScrollView>
@@ -30,17 +32,19 @@ const Addtocart = () => {
               alignItems: "center",
             }}
           >
+            <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image
               source={require("../../../assests/images/whiteleftarrow.png")}
               style={{ width: 28, height: 28 }}
             />
+            </TouchableOpacity>
             <View style={styles.topright}>
               <Image source={require("../../../assests/images/star.png")} />
             </View>
           </View>
 
           <View style={{ alignItems: "center", marginTop: -40 }}>
-            <Image source={require("../../../assests/images/headphone5.png")} />
+            <Image style={{width: 353,height:353}} source={image} />
           </View>
 
           <View
@@ -52,7 +56,7 @@ const Addtocart = () => {
             }}
           >
             <Text style={{ color: "white", fontSize: 18, fontWeight: "bold" }}>
-              Product Name
+             {productname}
             </Text>
             <Text style={{ color: "white", fontSize: 12, fontWeight: "bold" }}>
               Product Code:42303
@@ -71,7 +75,7 @@ const Addtocart = () => {
                 }}
               >
                 <Text style={{ fontSize: 15, fontWeight: "bold" }}>Price:</Text>
-                <Text style={{ fontSize: 15, fontWeight: "bold" }}>$15.00</Text>
+                <Text style={{ fontSize: 15, fontWeight: "bold" }}>{price}</Text>
               </View>
 
               <View
@@ -120,7 +124,7 @@ const Addtocart = () => {
                 <Text style={{ fontSize: 15, fontWeight: "bold" }}>
                   Condition:
                 </Text>
-                <Text style={{ fontSize: 15, fontWeight: "bold" }}>New</Text>
+                <Text style={{ fontSize: 15, fontWeight: "bold" }}>{tag}</Text>
               </View>
 
               <View

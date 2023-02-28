@@ -12,4 +12,5 @@ export * from './notificationbtn/Notificationtbn';
 export * from './notificationmsg/Notificationmsg';
 export * from './sizes/Sizes';
 export * from './button2/Button2';
+export * from './modal2/Modal2';
 

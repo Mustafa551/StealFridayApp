@@ -1,33 +1,4 @@
-// import React from 'react'
-// import { Text, View } from 'react-native'
-// import AntDesign from 'react-native-vector-icons/AntDesign'
-
-// const Viewall = ({title,viewall,marginTop}) => {
-//   return (
-//     <View style={{flexDirection: "row",alignItems: "center",width: "100%",justifyContent: "space-between",marginTop: marginTop}}>
-//         <View style={{justifyContent: "flex-start"}}>
-
-//         <Text style={{fontSize: 16,fontWeight: "bold"}}>{title}</Text>
-//         </View>
-//         <View style={{width: "50%",justifyContent: "center",alignItems: "center"}}>
-//         <View style={{borderBottomWidth: 1,height:1,width: "100%"}}></View>
-//         </View>
-//         <View style={{flexDirection: "row",justifyContent: "flex-end",alignItems: "center"}}>
-
-//         <Text style={{fontSize: 14,fontWeight: "bold",color: "#CD1C1B",}}>{viewall}</Text>
-// <AntDesign
-// name='arrowright'
-// size={17}
-// color={"#CD1C1B"}
-// />
-//         </View>
-//     </View>
-//   )
-// }
-
-// export  {Viewall}
-
-// import { Icon } from 'native-base';
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import AntDesign from "react-native-vector-icons/AntDesign";
@@ -42,9 +13,10 @@ const Viewall = ({
   lineColor,
   viewAllBtn,
   backgroundColor,
-  Press,
-  marginTop
+  press,
+  marginTop,
 }) => {
+  const navigation = useNavigation();
   return (
     <>
       <View
@@ -89,7 +61,11 @@ const Viewall = ({
           </View>
           {viewAllBtn && (
             <TouchableOpacity
-              onPress={Press}
+              onPress={() =>
+                navigation.navigate("Products", {
+                  screen: press,
+                })
+              }
               style={{
                 position: "absolute",
                 top: -13,

@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     alignSelf: "center",
-    marginTop: 20,
+    position: "absolute",
+    bottom: 10
   },
 });
 

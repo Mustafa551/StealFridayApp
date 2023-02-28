@@ -16,6 +16,9 @@ import Terms from '../screens/profileoptions/termscondition/Terms';
 import Privacypolicy from '../screens/profileoptions/privacypolicy/Privacypolicy';
 import Notification from '../screens/homes/notification/Notification';
 import Addtocart from '../screens/products/addtocart/Addtocart';
+import Changesimage from '../screens/homes/changesimage/Changesimage';
+import Featureddeals from '../screens/products/Featureddeals/Featureddeals';
+import Activedeals from '../screens/products/activedeals/Activedeals';
 
 
 
@@ -27,6 +30,7 @@ const Auth =()=>{
        
         <Stack.Navigator>
           {/* <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}} /> */}
+          {/* <Stack.Screen name="Changesimage" component={Changesimage} options={{headerShown:false}} /> */}
           <Stack.Screen name="Login" component={Login} options={{headerShown:false}} />
           <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}} />
           <Stack.Screen name="Payment" component={Payment} options={{headerShown:false}} />
@@ -38,7 +42,6 @@ const Auth =()=>{
  export const Homes =() =>{
     return(
         <Stack.Navigator>
-        <Stack.Screen name='Addtocart' component={Addtocart}  options={{headerShown:false}} />
         <Stack.Screen name='Home' component={Home}  options={{headerShown:false}} />
         <Stack.Screen name='Profilesetting' component={Profilesetting}  options={{headerShown:false}} />
         <Stack.Screen name='Changepassword' component={Changepassword}  options={{headerShown:false}} />
@@ -53,12 +56,24 @@ const Auth =()=>{
     )
 }
 
+export const Products =() =>{
+  return(
+      <Stack.Navigator>
+      <Stack.Screen name='Addtocart' component={Addtocart}  options={{headerShown:false}} />
+      <Stack.Screen name='Featureddeals' component={Featureddeals}  options={{headerShown:false}} />
+      <Stack.Screen name='Activedeals' component={Activedeals}  options={{headerShown:false}} />
+    </Stack.Navigator>
+
+  )
+}
+
 const  MyStack= () =>{
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Mydrawer" component={Mydrawer}  options={{headerShown:false}} />
           <Stack.Screen name="Auth" component={Auth} options={{headerShown:false}} />
+        <Stack.Screen name="Mydrawer" component={Mydrawer}  options={{headerShown:false}} />
+        <Stack.Screen name="Products" component={Products}  options={{headerShown:false}} />
           {/* <Stack.Screen name="Homes" component={Homes}  options={{headerShown:false}} /> */}
 
       </Stack.Navigator>

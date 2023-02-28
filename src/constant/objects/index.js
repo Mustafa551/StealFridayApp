@@ -9,7 +9,7 @@ export const product = [
     },
     {
       tag: "Old",
-      price: "$15.00",
+      price: "$20.00",
       image: require("../../assests/images/shoes1.png"),
       title: "Nike Collection",
       backcolor: "#998BC8AD",
@@ -17,7 +17,7 @@ export const product = [
     },
     {
       tag: "New",
-      price: "$15.00",
+      price: "$10.00",
       image: require("../../assests/images/headphone1.png"),
       title: "Beats Up HeadSet",
       backcolor: "#114C8A",
@@ -25,7 +25,7 @@ export const product = [
     },
     {
       tag: "New",
-      price: "$15.00",
+      price: "$18.00",
       image: require("../../assests/images/shoes2.png"),
       title: "Nike Collection",
       backcolor: "#CDF37B",
@@ -33,7 +33,7 @@ export const product = [
     },
     {
       tag: "Old",
-      price: "$15.00",
+      price: "$9.00",
       image: require("../../assests/images/tshirt2.png"),
       title: "Gym T-shirt",
       backcolor: "#00000029",
@@ -267,3 +267,159 @@ export const product = [
       time: "Yesterday - 10:00 Pm"
     },
   ]
+
+
+
+  export const clothing = [
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt1.png"),
+      title: "Gym T-shirt",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt6.png"),
+      title: "Gym T-shirt",
+      backcolor: "#998BC8AD",
+      iconcolor: "#453B62",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt7.png"),
+      title: "Gym T-shirt",
+      backcolor: "#114C8A",
+      iconcolor: "#114C8A",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt8.png"),
+      title: "T-shirt",
+      backcolor: "#BFFB41",
+      iconcolor: "#CDF37B",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt9.png"),
+      title: "T-shirt",
+      backcolor: "#AF0010",
+      iconcolor: "#FF0000",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/tshirt2.png"),
+      title: "T-shirt",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+  ];
+
+
+  export const shoes = [
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/shoes7.png"),
+      title: "Nike Collection",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/shoes1.png"),
+      title: "Nike Collection",
+      backcolor: "#998BC8AD",
+      iconcolor: "#453B62",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/shoes8.png"),
+      title: "Nike Collection",
+      backcolor: "#114C8A",
+      iconcolor: "#114C8A",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/shoes2.png"),
+      title: "Nike Collection",
+      backcolor: "#BFFB41",
+      iconcolor: "#CDF37B",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/shoes7.png"),
+      title: "Nike Collection",
+      backcolor: "#AF0010",
+      iconcolor: "#FF0000",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/shoes7.png"),
+      title: "Nike Collection",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+  ];
+
+  export const accessories = [
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/headphone5.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/headphone5.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#998BC8AD",
+      iconcolor: "#453B62",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/headphone2.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#114C8A",
+      iconcolor: "#114C8A",
+    },
+    {
+      tag: "New",
+      price: "$15.00",
+      image: require("../../assests/images/headphone6.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#BFFB41",
+      iconcolor: "#CDF37B",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/headphone7.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#AF0010",
+      iconcolor: "#FF0000",
+    },
+    {
+      tag: "Old",
+      price: "$15.00",
+      image: require("../../assests/images/apple.png"),
+      title: "Beats Up HeadSet",
+      backcolor: "#00000029",
+      iconcolor: "#00000029",
+    },
+  ];

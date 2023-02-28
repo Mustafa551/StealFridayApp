@@ -13,7 +13,10 @@ import CountDown from "react-native-countdown-component";
 import { Header, Product, Viewall, Products2 } from "../../../components";
 import { product, product2, product3 } from "../../../constant/objects";
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation }) => {  
+
+
+
   return (
     <ScrollView style={{ backgroundColor: "#F8F8F8" }}>
       <SafeAreaView style={{ flex: 1 }}>
@@ -55,6 +58,7 @@ const Home = ({ navigation }) => {
           </LinearGradient>
 
           <Viewall
+          press={'Featureddeals'}
             viewAllBtn
             text="Featured Deals"
             text2={"View All"}
@@ -62,9 +66,10 @@ const Home = ({ navigation }) => {
             left={0}
           />
 
-          <Product hori={true} product={product} marginTop={40} />
+          <Product press={navigation} hori={true} product={product} marginTop={40} />
 
           <Viewall
+          press={'Activedeals'}
             viewAllBtn
             text="Deal Categories"
             text2={"View All"}
@@ -77,6 +82,7 @@ const Home = ({ navigation }) => {
           </View>
 
           <Viewall
+          press={'Activedeals'}
             viewAllBtn
             text="Active Deals"
             text2={"View All"}
@@ -85,6 +91,7 @@ const Home = ({ navigation }) => {
           />
 
           <Product
+          press={navigation}
             hori={false}
             num={2}
             product={product3}
