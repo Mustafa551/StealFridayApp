@@ -35,11 +35,19 @@
 // export  {Products2}
 
 import React from "react";
-import { View, Text, FlatList, StyleSheet, Image } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 
-const Products2 = ({ product }) => {
+const Products2 = ({ product, press }) => {
   return (
     <FlatList
+      initialScrollIndex={1}
       style={{
         borderRadius: 30,
         width: "100%",
@@ -49,18 +57,44 @@ const Products2 = ({ product }) => {
       horizontal={true}
       data={product}
       showsHorizontalScrollIndicator={false}
-      renderItem={( item ) => {
+      renderItem={(item) => {
         return (
           <>
-          <View style={styles.mainview}>
-            <View style={{marginTop: -10,overflow: "hidden",width: 196,height: 250}}>
-              <Image style={{width: "100%",height: "100%",overflow: "visible"}} resizeMode="cover" source={item.item.image}/>
-            </View>
-            <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 16,fontWeight: "bold"}}>{item.item.title}</Text>
-                <Text style={{fontSize: 14}}>{item.item.total}</Text>
-            </View>
-          </View>
+            <TouchableOpacity
+              style={styles.mainview}
+              onPress={() =>
+                press.navigate("Products", { screen: "Categories", params: {
+                  name: item.item.title
+                } })
+              }
+            >
+              <View>
+                <View
+                  style={{
+                    marginTop: -10,
+                    overflow: "hidden",
+                    width: 196,
+                    height: 250,
+                  }}
+                >
+                  <Image
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      overflow: "visible",
+                    }}
+                    resizeMode="cover"
+                    source={item.item.image}
+                  />
+                </View>
+                <View style={{ alignItems: "center" }}>
+                  <Text style={{ fontSize: 16, fontWeight: "bold" }}>
+                    {item.item.title}
+                  </Text>
+                  <Text style={{ fontSize: 14 }}>{item.item.total}</Text>
+                </View>
+              </View>
+            </TouchableOpacity>
           </>
         );
       }}
@@ -79,8 +113,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 15,
     overflow: "visible",
-    marginLeft: 10
+    marginLeft: 10,
   },
 });
 
-export  {Products2};
+export { Products2 };

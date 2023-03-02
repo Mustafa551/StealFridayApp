@@ -13,6 +13,7 @@ const Featureddeals = ({ navigation }) => {
           <Header
             filteropen={() => setVisible(true)}
             filter={true}
+            one={visible}
             press3={() => navigation.goBack()}
             header2={true}
           />
@@ -26,6 +27,7 @@ const Featureddeals = ({ navigation }) => {
 
         <View style={{ width: "95%", alignSelf: "center" }}>
           <Product
+          press={navigation}
             hori={false}
             num={2}
             product={product3}

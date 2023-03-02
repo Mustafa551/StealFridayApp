@@ -19,6 +19,7 @@ import Addtocart from '../screens/products/addtocart/Addtocart';
 import Changesimage from '../screens/homes/changesimage/Changesimage';
 import Featureddeals from '../screens/products/Featureddeals/Featureddeals';
 import Activedeals from '../screens/products/activedeals/Activedeals';
+import Categories from '../screens/products/categories/Categories';
 
 
 
@@ -62,6 +63,7 @@ export const Products =() =>{
       <Stack.Screen name='Addtocart' component={Addtocart}  options={{headerShown:false}} />
       <Stack.Screen name='Featureddeals' component={Featureddeals}  options={{headerShown:false}} />
       <Stack.Screen name='Activedeals' component={Activedeals}  options={{headerShown:false}} />
+      <Stack.Screen name='Categories' component={Categories}  options={{headerShown:false}} />
     </Stack.Navigator>
 
   )

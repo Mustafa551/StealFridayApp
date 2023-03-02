@@ -18,6 +18,7 @@ const Activedeals = ({navigation}) => {
             filter={filterbtn}
             press3={() => navigation.goBack()}
             header2={true}
+            one={visible}
           />
 
           <View style={{ alignItems: "center", marginTop: 30 }}>

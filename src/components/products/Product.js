@@ -16,10 +16,12 @@ const Product = ({
   num,
   marginbottom,
   press,
+  
 }) => {
   return (
     <View style={{ marginTop: marginTop }}>
       <FlatList
+      
         data={product}
         showsHorizontalScrollIndicator={false}
         horizontal={hori}

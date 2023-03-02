@@ -66,7 +66,7 @@ const Home = ({ navigation }) => {
             left={0}
           />
 
-          <Product press={navigation} hori={true} product={product} marginTop={40} />
+          <Product  press={navigation}  hori={true} product={product} marginTop={40} />
 
           <Viewall
           press={'Activedeals'}
@@ -78,7 +78,7 @@ const Home = ({ navigation }) => {
           />
 
           <View style={{ marginTop: 20 }}>
-            <Products2 product={product2} />
+            <Products2 press={navigation} product={product2} />
           </View>
 
           <Viewall
